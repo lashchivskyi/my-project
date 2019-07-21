@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Тест</title>
+</head>
+<body>
+	<nav>
+		<a href="index.html">Return</a>
+	</nav>
+	<form action="https://formspree.io/lashchivskyi@gmail.com" method="POST">
+		<fieldset>
+			<legend>Персональна інформація</legend>
+			<p>
+				<label>Стать</label>
+                <label>
+                    <input type="radio" name="gender" value="чол" required>
+                    Чол
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="жін">
+                    Жін
+                </label>
+            </p>
+            <p>
+                <label for="name">Ім'я</label>
+                <input id="name" type="text" required name="user-name">
+            </p>
+            <p>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="user-email" required>
+            </p>
+            <p>
+                <label for="phone">Телефон</label>
+                <input type="tel" id="phone" name="user-tel">
+            </p>
+            <p>
+                <label for="country">Країна</label>
+                <select id="country"  name="country">
+                    <option>Україна</option>
+                    <option>Білорусія</option>
+                    <option>Польща</option>
+                    <option>Іспанія</option>
+                    <option>Німеччина</option>
+                    <option>Великобританія</option>
+                </select>
+            </p>
+            <legend>
+                Що ви знаєте про автомобілі?
+            </legend>
+            <p>
+                1. Яка найпопулярніша машини в Україні?:<br>
+                <label>
+                    <input type="radio" name="question1" value="Toyota"> Toyota
+                </label><br>
+                <label>
+                    <input type="radio" name="question1" value="BMW"> BMW
+                </label><br>
+                <label>
+                    <input type="radio" name="question1" value="Lanos"> Lanos
+                </label><br>
+                <label>
+                    <input type="radio" name="question1" value="Opel"> Opel
+                </label><br>
+            </p>
+            <p>
+                2. Яка найдорожча машина в Україні? :<br>
+                <label>
+                    <input type="radio" name="question2" value="Lanos"> Lanos
+                </label><br>
+                <label>
+                    <input type="radio" name="question2" value="BMW"> BMW
+                </label><br>
+                <label>
+                    <input type="radio" name="question2" value="Opel"> Opel
+                </label><br>
+                <label>
+                    <input type="radio" name="question2" value="Maybach"> Maybach
+                </label><br>
+            </p>
+            <p>
+                3.Найдорожча машина у світі? :<br>
+                <label>
+                    <input type="radio" name="question3" value="Bugatti"> Bugatti
+                </label><br>
+                <label>
+                    <input type="radio" name="question3" value="Maybach"> Maybach
+                </label><br>
+                <label>
+                    <input type="radio" name="question3" value="BMW"> BMW
+                </label><br>
+                <label>
+                    <input type="radio" name="question3" value="Lanos"> Lanos
+                </label><br>
+            </p>
+               <p>
+                Яка машина подобається вам? :<br>
+                <label>
+                    <input type="checkbox" name="favourite-wine" value="Bugatti"> Bugatti
+                </label><br>
+                <label>
+                    <input type="checkbox" name="favourite-wine" value="Maybach"> Maybach
+                </label><br>
+                <label>
+                    <input type="checkbox" name="favourite-wine" value="Lanos"> Lanos
+                </label><br>
+                 <input type="checkbox" name="favourite-wine" value="Audi"> Audi
+                </label><br>
+            </p>
+            <p>
+                <label for="date1">Коли останній раз ви замовляли таксі?</label>
+                <input id="date1" type="date" value="2019-07-20" min="2000-01-01" max="2029-12-31" name="date-of-frinking">
+                </p>
+            <p>
+                <label for="quantity">Скільки разів на місяць ви користуєтесь таксі?</label>
+                <input id="quantity" type="number" min="0" max="30" step="1" value="" name="quantity-of-wine">
+            </p>
+            <p>
+                <Label for="dream">Яку кількість автомобілів ви вже змінили?</Label>
+                <input id="dream" type="range" min="0" max="100" step="1" value="50" name="desired-quantity-of-wine">
+                <output for="dream">50</output>
+            </p>
+            <label>
+                    <input type="checkbox" required>
+                    Я згідний з <a href="/terms">умовами використання</a>
+                </label>
+            <p><button value="Відправити ">Відправити</button> <input type="reset" value="Очистити"></p>
+    </form>
+</body>
+</html>
