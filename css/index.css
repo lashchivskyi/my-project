@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Bonbon|Slabo+27px&display=swap');
+:root{
+ --main-color: black;
+ --accent-color: red;
+ font-family: 'Slabo 27px', serif;;
+ }
+
+body{
+    min-width: 320px;
+    max-width: 960px;    
+}
+
+.info{
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    margin: 0;
+    border: 0;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    list-style-type: none;
+}
+
+.menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 600;
+}
+
+.logo-lviv {
+    
+}
