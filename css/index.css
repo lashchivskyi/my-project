@@ -1,13 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Bonbon|Slabo+27px&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rubik|Sancreek&display=swap');
 :root{
  --main-color: black;
- --accent-color: red;
- font-family: 'Slabo 27px', serif;;
+ font-family: 'Rubik', sans-serif;
  }
 
-body{
+.body{
+    padding: o;
+    margin: auto;
+    max-width: 980px;
     min-width: 320px;
-    max-width: 960px;    
 }
 
 .info{
@@ -20,11 +21,13 @@ body{
 }
 
 .name {
+    font-size: 1.2rem;
     display: flex;
     justify-content: center;
     text-transform: uppercase;
-    margin: 0;
-    border: 0;
+    font-family: 'Sancreek', cursive;
+    text-align: center;
+    background: silver;
 }
 
 .phone {
@@ -46,6 +49,53 @@ body{
     font-weight: 600;
 }
 
-.logo-lviv {
-    
+.menu a:hover{
+    border-bottom: 3px solid red;
+}
+
+header .baner {
+    background-image: url(../img/lviv-city.jpg);
+    min-height: 500px;
+    background-size: cover;
+    background-position: left;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    background-position: 0 0 30px;
+}
+
+.product {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3px;
+    margin: auto;
+}
+
+.product img {
+    width: 100%;
+    display: block;
+
+}
+
+.h1 {
+    text-align: center;
+}
+
+.h2 {
+    text-align: center;
+}
+
+ .main p {
+    text-align: center; 
+}
+
+@media (min-width 550px) {
+ main .product{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+ }
+ }
+
+main .h3 {
+    flex-direction: column;
 }
