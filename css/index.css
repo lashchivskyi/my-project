@@ -4,100 +4,34 @@
  font-family: 'Rubik', sans-serif;
  }
 
-.body{
-    padding: o;
-    margin: auto;
+html, body {
     max-width: 980px;
-    min-width: 320px;
-}
+    margin: auto;
+    padding: 0;
+    color: #4E4E4E;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.600em;
+    }
 
-.info{
+  .main-nav-list {
     display: flex;
     justify-content: space-around;
     padding: 0;
     list-style-type: none;
     text-decoration: none;
     text-transform: uppercase;
-}
-
-.name {
-    font-size: 1.2rem;
-    display: flex;
-    justify-content: center;
-    text-transform: uppercase;
-    font-family: 'Sancreek', cursive;
-    text-align: center;
-    background: silver;
 }
 
 .phone {
-    display: flex;
-    align-items: center;
+   text-align: center;
+   display: flex;
+   justify-content: space-around;
+   margin: 0;
 }
 
-.menu {
-    display: flex;
-    justify-content: space-around;
-    padding: 0;
-    list-style-type: none;
-}
-
-.menu a {
-    text-decoration: none;
+.name {
+    text-align: center;
     text-transform: uppercase;
-    color: #000;
-    font-weight: 600;
 }
-
-.menu a:hover{
-    border-bottom: 3px solid red;
-}
-
-header .baner {
-    background-image: url(../img/lviv-city.jpg);
-    min-height: 500px;
-    background-size: cover;
-    background-position: left;
-    display: flex;
-    align-items: center;
-    margin: auto;
-    background-position: 0 0 30px;
-}
-
-.product {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 3px;
-    margin: auto;
-}
-
-.product img {
-    width: 100%;
-    display: block;
-
-}
-
-.h1 {
-    text-align: center;
-}
-
-.h2 {
-    text-align: center;
-}
-
- .main p {
-    text-align: center;
-}
-
-@media (min-width 550px) {
- main .product{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
- }
- }
-
-main .h3 {
-    flex-direction: column;
-}
-
-.Dungeons of Lviv

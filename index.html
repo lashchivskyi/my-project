@@ -11,117 +11,143 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="info">
-                <p>ТзОВ Львів-Тур</p>
-                <a class="phone" href="tel:0967600555">тел:0967600555</a>
-            </div>
+    <header class="main-header">
+        <div class="phone">
+            <p>ТзОВ Львів-Тур</p>
+            <a href="tel:0967600555"> тел:0967600555</a>
+        </div>
+        <div class="container">
             <div class="name">
-                <p> Пішохідні,автобусні та вилосипедні ЕКСКУРСІЇ У ЛЬВОВІ</p>
+                <p><strong> Пішохідні,автобусні та вилосипедні ЕКСКУРСІЇ У ЛЬВОВІ</strong></p>
             </div>
-            <ul class="menu">
-                <li><a href="#Екскурсії_за_місто">Екскурсії за місто</a></li>
-                <li><a href="#Екскурсії_по_Львову">Екскурсії по Львову</a></li>
-                <li><a href="#Замовити_екскурсію">Замовити екскурсію</a></li>
-                <li><a href="#Наші_контакти">Наші контакти</a></li>
-            </ul>
-            <div class="baner">
-                <img class="baner">
-            </div>
-        </nav>
+            <nav class="main-nav">
+                <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#myNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <ul class="main-nav-list">
+                    <li><a href="#Екскурсії_за_місто">Екскурсії за місто</a></li>
+                    <li><a href="#Екскурсії_по_Львову">Екскурсії по Львову</a></li>
+                    <li><a href="#Замовити_екскурсію">Замовити екскурсію</a></li>
+                    <li><a href="#Наші_контакти">Наші контакти</a></li>
+                </ul>
+                <h1 class="mh-logo">
+                    <a href="index.html"><img class="logo-pic" src="img/lviv-city.jpg" alt="Excursions of Lviv" /></a>
+                </h1>
+            </nav>
+        </div>
 
     </header>
-    <main class="main">
-        <section id="Екскурсії_по_Львову">
-            <h1 class="h1">Екскурсії по Львову</h1>
-            <h3><strong>Підземелля Львова</strong></h3>
-            <article id="Dungeons of Lviv" class="product">
-                <img src="img/dungeon.png" alt="client"><br>
-                <p>Тематична екскурсія підземним Львовом, тривалістю приблизно 2,5 години. Підземне місто манить до
-                    себе… Які таємниці воно від нас приховує?</p>
-            </article>
-            <article id="Evening Lviv" class="product">
-                <p><strong>Вечірній Львів</strong></p>
-                <img src="img/evening-lviv.jpg" alt="client"><br>
-                <p>Легка вечірня екскурсія центром Львова, тривалістю 2 години. Львів у вечірній час виглядає
-                    по-особливому – освітлені вулиці, підсвічені будинки та храми.</p>
-            </article>
-            <article id="Streets of medieval Lviv" class="product">
-                <p><strong>Вулицями середньовічного Львова</strong></p>
-                <img src="img/medieval-lviv.jpg" alt="client"><br>
-                <p>Пішохідна екскурсія центром міста, тривалістю 2-3 години. Ця екскурсія найкраще підійде для людей,
-                    які вперше відвідують місто Львів та для тих, хто ще не гуляв Львовом в супроводі гіда.</p>
-            </article>
-            <article id="Austrian Lviv" class="product">
-                <p><strong>Австрійський Львів</strong></p>
-                <img src="img/austrian-lviv.jpg" alt="client"><br>
-                <p>Екскурсія об’єктами австрійської спадщини міста Львова, тривалістю 2,5 години. Австрійський період в
+
+    <section>
+        <div class="flex">
+            <p id="Екскурсії_по_Львову"></p>
+            <div class="col" id="dungeon">
+                <h1 class="h1">Екскурсії по Львову</h1>
+                <img src="img/dungeon.png" alt="Dungeons of Lviv">
+                <h2><strong>Підземелля Львова</strong></h2>
+                <p>
+                    Тематична екскурсія підземним Львовом, тривалістю приблизно 2,5 години. Підземне місто манить до
+                    себе… Які таємниці воно від нас приховує?
+                </p>
+            </div>
+            <div class="col" id="evening_lviv">
+                <img src="img/evening-lviv.jpg" alt="evening-lviv">
+                <h2>Вечірній Львів</h2>
+                <p>
+                    Легка вечірня екскурсія центром Львова, тривалістю 2 години. Львів у вечірній час виглядає
+                    по-особливому – освітлені вулиці, підсвічені будинки та храми.
+                </p>
+            </div>
+            <div class="col" id="Streets_of_medieval_Lviv">
+                <img src="img/medieval-lviv.jpg" alt="Streets of medieval Lviv">
+                <h2>Вулицями середньовічного Львова</h2>
+                <p>
+                    Пішохідна екскурсія центром міста, тривалістю 2-3 години. Ця екскурсія найкраще підійде для людей,
+                    які вперше відвідують місто Львів та для тих, хто ще не гуляв Львовом в супроводі гіда.
+                </p>
+            </div>
+            <div class="col" id="Austrian_Lviv">
+                <img src="img/austrian-lviv.jpg" alt="Austrian Lviv">
+                <h2>Австрійський Львів</h2>
+                <p>
+                    Екскурсія об’єктами австрійської спадщини міста Львова, тривалістю 2,5 години. Австрійський період в
                     історії Львова тривав майже 150 років. За цей час було кардинально змінено архітектурне обличчя
-                    нашого міста. І зміни ці вийшли на краще.</p>
-            </article>
-        </section>
-        <section id="Екскурсії_за_місто">
-            <h1 class="h2">Екскурсії за місто</h1>
-            <article id="Gold horseshoe" class="product">
-                <p><strong>Золота підкова – Замки Львівщини</strong></p>
-                <img src="img/golden-horseshoe.jpg" alt="client"><br>
-                <p>Автобусна екскурсія замками Львівщини: Підгорецький, Золочівський, Олеський замок та обід по
+                    нашого міста. І зміни ці вийшли на краще.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="flex">
+            <p id="Екскурсії_за_місто"></p>
+            <div class="col" id="Gold_horseshoe">
+                <h1 class="h1">Екскурсії за місто</h1>
+                <img src="img/golden-horseshoe.jpg" alt="Gold horseshoe">
+                <h2><strong>Золота підкова – Замки Львівщини</strong></h2>
+                <p>
+                    Автобусна екскурсія замками Львівщини: Підгорецький, Золочівський, Олеський замок та обід по
                     маршруту, тривалістю 1 день. Довкруги Львова збереглося чимало пам’яток старовини, в тому числі
-                    чудових замків.</p>
-            </article>
-            <article id="Royal city" class="product">
-                <p><strong>Королівське місто Жовква</strong></p>
-                <img src="img/royal-city-of-zhovkva.jpg" alt="client"><br>
-                <p>Екскурсія в королівське місто Жовкву та до Крехівського монастиря, тривалістю 1 день. Не тільки у
+                    чудових замків.
+                </p>
+            </div>
+
+            <div class="col" id="Royal_city">
+                <img src="img/royal-city-of-zhovkva.jpg" alt="Royal city">
+                <h2>Королівське місто Жовква</h2>
+                <p>
+                    Екскурсія в королівське місто Жовкву та до Крехівського монастиря, тривалістю 1 день. Не тільки у
                     Львові збереглася чудова архітектура, не тільки столиця Західної України вабить до себе подорожніх.
                 </p>
-            </article>
-            <article id="Lake Synevir" class="product">
-                <img src="img/synevyr-foto.jpg" alt="client"><br>
-                <p><strong>Озеро Синевир і водоспад Шипіт</strong></p>
-                <p>Автобусна екскурсія до водоспаду Шипіт, підйомника на гору Гимба та озера Синевир, тривалістю 1 день.
-                    Вирушаємо зі Львова приблизно о 7:00, такий ранній виїзд необхідний, адже дорога довга.</p>
-            </article>
-            <article id="Zahar Berkut lift" class="product">
-                <p><strong>Підйомник Захар Беркут і фортеця Тустан</strong></p>
-                <img src="img/zakhar-berkut.jpg" alt="client"><br>
-                <p>Автобусна екскурсія зі Львова до скельної фортеці Тустань, підйомника Захар Беркут та Кам’янецького
-                    водоспаду тривалістю 1 день. Робимо ранній виїзд зі Львова (8:00 або й раніше) і прямуємо в Карпати
+            </div>
+            <div class="col" id="Lake_Synevir">
+                <img src="img/synevyr-foto.jpg" alt="Lake Synevir">
+                <h2>Озеро Синевир і водоспад Шипіт</h2>
+                <p>
+                    Автобусна екскурсія до водоспаду Шипіт, підйомника на гору Гимба та озера Синевир, тривалістю 1
+                    день.
+                    Вирушаємо зі Львова приблизно о 7:00, такий ранній виїзд необхідний, адже дорога довга.
                 </p>
-            </article>
-        </section>
-        <section id="Замовити_екскурсію">
-            <h2>Замовити екскурсію</h2>
-        </section>
-    </main>
+            </div>
+            <div class="col" id="Zahar_Berkut_lift">
+                <img src="img/zakhar-berkut.jpg" alt="Zahar Berkut lift">
+                <h2>Підйомник Захар Беркут і фортеця Тустан</h2>
+                <p>
+                    Автобусна екскурсія зі Львова до скельної фортеці Тустань, підйомника Захар Беркут та Кам’янецького
+                    водоспаду тривалістю 1 день. Робимо ранній виїзд зі Львова (8:00 або й раніше) і прямуємо в Карпати.
+                </p>
+            </div>
+        </div>
+    </section>
+
     <footer>
-        <div id="contact">
-            <form class="form" action="Замовити_екскурсію">
-                <input class="username" type="text" placeholder="Name"><br>
-                <input class="email" type="email" placeholder="E-mail"><br>
-                <input class="tel" type="tel" placeholder="Phone"><br>
-                <textarea class="text" placeholder="Text"></textarea><br>
-                <input type="submit" value="Замовити">
-            </form>
-        </div>
-        <div>
-            <section id="Наші_контакти">
-                <h3>Наші контакти</h3>
-                <ul>
-                    <li>info@openlviv.com</li>
-                    <li>Viber: +38 (093) 486-56-06, WhatsApp: +38 (068) 320-37-11</li>
-                    <li>м.Львів,вул.Руська 3</li>
-                </ul>
-                <p><strong>Зв'яжіться з нами в соціальних мережах</strong></p>
-                <img src="img/fb-icon.jpg" alt="client">
-                <img src="img/gmail-icon.png" alt="client">
-                <img src="img/instagram-icon.jpg" alt="client">
-                <img src="img/linkedin-icon.png" alt="client">
-            </section>
-        </div>
+            <h2>Замовити екскурсію</h2>
+            <div id="contact">
+                <form class="form" action="Замовити_екскурсію">
+                    <input class="username" type="text" placeholder="Name"><br>
+                    <input class="email" type="email" placeholder="E-mail"><br>
+                    <input class="tel" type="tel" placeholder="Phone"><br>
+                    <textarea class="text" placeholder="Text"></textarea><br>
+                    <input type="submit" value="Замовити">
+                </form>
+            </div>
+            <div>
+                <section id="Наші_контакти">
+                    <h3>Наші контакти</h3>
+                    <ul>
+                        <li>info@openlviv.com</li>
+                        <li>Viber: +38 (093) 486-56-06, WhatsApp: +38 (068) 320-37-11</li>
+                        <li>м.Львів,вул.Руська 3</li>
+                    </ul>
+                    <p><strong>Зв'яжіться з нами в соціальних мережах</strong></p>
+                <div class="foto-sm">
+                    <img src="img/fb-icon.jpg" alt="client">
+                    <img src="img/gmail-icon.png" alt="client">
+                    <img src="img/instagram-icon.jpg" alt="client">
+                    <img src="img/linkedin-icon.png" alt="client">
+                </div>
+                </section>
+            </div>
     </footer>
-    <script src="js/index.js"> </script>
 </body>
 
 </html>
