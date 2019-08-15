@@ -3,7 +3,7 @@
     font-family: 'Rubik', sans-serif;
 }
 
-.html .body .footer {
+html {
     max-width: 980px;
     margin: auto;
     padding: 3px;
@@ -66,6 +66,7 @@ header .main-nav-list a:hover {
     font-size: 1.5rem;
 }
 
+
 /* flex */
 
 .flex {
@@ -76,13 +77,13 @@ header .main-nav-list a:hover {
     text-align: center;
 }
 
-.flex .col img  {
+.flex .col img {
     width: 100%;
     height: auto;
     transition: transform .5s ease;
 }
 
- .flex .col {
+.flex .col {
     padding-bottom: 5px;
     color: #424346;
     background: #FFF;
@@ -93,9 +94,11 @@ header .main-nav-list a:hover {
     margin: 1em 1em;
 }
 
+
 /* flex */
 
-.h1,.h2 {
+.h1,
+.h2 {
     text-align: center;
     margin: auto;
 }
@@ -103,6 +106,7 @@ header .main-nav-list a:hover {
 .foto-sm {
     display: flex;
     justify-content: center;
+    list-style-type: none;
 }
 
 .foto-sm img {
@@ -116,12 +120,21 @@ header .main-nav-list a:hover {
     list-style-type: none;
 }
 
+.namber {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
 .kontaktu {
     text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .video {
-  text-align: center;
+    text-align: center;
 }
 
 .VideoCol {
@@ -131,6 +144,7 @@ header .main-nav-list a:hover {
     max-width: 100%;
     text-align: center;
 }
+
 
 /*contact-form*/
 
@@ -198,26 +212,47 @@ textarea {
     opacity: 0.8;
 }
 
+
 /*contact-form*/
 
-   @media (min-width: 200px) {
-    .first-flex, .two-flex  {
+@media (min-width: 200px) {
+    .first-flex,
+    .two-flex {
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 3px;
     }
 }
 
-    @media (min-width: 460px) {
-    .first-flex, .two-flex {
+@media (min-width: 460px) {
+    .first-flex,
+    .two-flex {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 }
 
-    @media (min-width: 660px) {
-    .first-flex, .two-flex {
+@media (min-width: 660px) {
+    .first-flex,
+    .two-flex {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
+
+     .btn primary {
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        padding: .5em 2em;
+        outline: none;
+        border-width: 2px 0;
+        border-style: solid none;
+        border-color: #FDBE33 #000 #D77206;
+        border-radius: 6px;
+        background: linear-gradient(#F3AE0F, #E38916) #E38916;
+        transition: 0.2s;
+        } 
+        a.btn primary:hover { background: linear-gradient(#f5ae00, #f59500) #f5ae00; }
+        a.btn primary:active { background: linear-gradient(#f59500, #f5ae00) #f59500; }
+        
