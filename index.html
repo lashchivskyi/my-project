@@ -13,7 +13,7 @@
 <body>
     <header class="main-header">
         <div class="phone">
-            <p>ТзОВ Львів-Тур</p>
+            <p class="name-firma">ТзОВ Львів-Тур</p>
             <a href="tel:0967600555"> тел:0967600555</a>
         </div>
         <div class="container">
@@ -36,8 +36,8 @@
     </header>
 
     <section>
-        <p id="Екскурсії_по_Львову"></p>
-        <h1 class="h1">Екскурсії по Львову</h1>
+            <p id="Екскурсії_по_Львову"></p>
+            <h1 class="h1">Екскурсії по Львову</h1><br>
         <div class="flex">
             <div class="first-flex">
                 <div class="col" id="dungeon">
@@ -79,11 +79,11 @@
         </div>
     </section>
     <section>
-        <div class="flex">
-            <p id="Екскурсії_за_місто"></p>
-            <div class="col" id="Gold_horseshoe">
+                <p id="Екскурсії_за_місто"></p>
                 <h1 class="h1">Екскурсії за місто</h1>
-                <div class="two-flex">
+        <div class="flex">
+            <div class="two-flex">
+             <div class="col" id="Gold_horseshoe">
                     <img src="img/golden-horseshoe.jpg" alt="Gold horseshoe">
                     <h2><strong>Золота підкова – Замки Львівщини</strong></h2>
                     <p>
@@ -124,36 +124,42 @@
             </div>
         </div>
     </section>
-
+     <section class="video">
+        <h2 class="headinds">Львів Blog 360</h2>
+            <div class="VideoCol" id="video_lviv">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/gP1jPLctMJY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+    </section>
     <footer>
         <div id="contact">
-             <p id="Замовити_екскурсію"></p>
-             <h2 class="h2">Замовити екскурсію</h2>
-            <form class="form" action="Замовити_екскурсію">
-                <input class="username" type="text" placeholder="Name"><br>
-                <input class="email" type="email" placeholder="E-mail"><br>
-                <input class="tel" type="tel" placeholder="Phone"><br>
-                <textarea class="text" placeholder="Text"></textarea><br>
-                <input type="submit" value="Замовити">
-            </form>
+            <p id="Замовити_екскурсію"></p>
+            <h2 class="h2">Замовити екскурсію</h2>
+            <section class="contact-form" id="myForm">
+                <form class="feedback-form" method="POST" name="contact">
+                    <input class="feedback-input" id="userName" type="text" name="name" placeholder="Name" required>
+                    <input class="feedback-input" id="userEmail" type="email" name="e-mail" placeholder="E-mail"
+                        required>
+                    <textarea class="feedback-input" id="textarea" name="phone" placeholder="Phone" required></textarea>
+                    <button id="contact-submit" type="submit" value="Замовити">Замовити</button>
+                </form>
+            </section>
         </div>
         <div>
             <section id="Наші_контакти">
                 <div class="kontaktu">
-                <div class="info">
-                <h3>Наші контакти</h3>
-                <ul>
-                    <li>info@openlviv.com</li>
-                    <li>Viber: +38 (093) 486-56-06, WhatsApp: +38 (068) 320-37-11</li>
-                    <li>м.Львів,вул.Руська 3</li>
-                </ul>
-                </div>
-                <p><strong>Зв'яжіться з нами в соціальних мережах</strong></p>
-                <div class="foto-sm">
-                    <img src="img/fb-icon.png" alt="fb-icon">
-                    <img src="img/gmail-icon.png" alt="gmail-icon">
-                    <img src="img/instagram-icon.png" alt="instagram">
-                </div>
+                    <div class="info">
+                        <h3>Наші контакти</h3>
+                        <ul>
+                            <li>info@openlviv.com</li>
+                            <li>Viber: +38 (093) 486-56-06, WhatsApp: +38 (068) 320-37-11</li>
+                            <li>м.Львів,вул.Руська 3</li>
+                        </ul>
+                    </div>
+                    <p><strong>Зв'яжіться з нами в соціальних мережах</strong></p>
+                    <div class="foto-sm">
+                        <img src="img/fb-icon.png" alt="fb-icon">
+                        <img src="img/gmail-icon.png" alt="gmail-icon">
+                    </div>
                 </div>
             </section>
         </div>

@@ -1,22 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik|Sancreek&display=swap');
-:root{
- --main-color: black;
- font-family: 'Rubik', sans-serif;
- }
+:root {
+    font-family: 'Rubik', sans-serif;
+}
 
-html, body, footer {
+.html .body .footer {
     max-width: 980px;
     margin: auto;
-    padding: 0;
+    padding: 3px;
     color: #4E4E4E;
-    font-family: "Lato", sans-serif;
+    background-color: #FAFAFA;
+    font-family: "Rubik", sans-serif;
     font-size: 14px;
     font-weight: 300;
     line-height: 1.600em;
-    }
+}
 
 .main-header {
-    background-color: silver;
+    background-color: #DCDCDC;
+}
+
+.name-firma {
+    margin: 3px;
 }
 
 .logo-pic {
@@ -30,23 +34,39 @@ html, body, footer {
 .main-nav-list {
     display: flex;
     justify-content: space-around;
-    padding: 0;
     list-style-type: none;
     text-decoration: none;
     text-transform: uppercase;
+    padding: 0;
+    font-size: 15px;
+    text-align: center;
+}
+
+.main-nav-list a {
+    border: 2px solid transparent;
+    padding: 5px;
+}
+
+header .main-nav-list a:hover {
+    border: 2px solid #fff;
+    background: #fff;
+    color: #4d4d4d;
 }
 
 .phone {
-   text-align: center;
-   display: flex;
-   justify-content: space-around;
-
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .name {
     text-align: center;
     text-transform: uppercase;
+    font-size: 1.5rem;
 }
+
+/* flex */
 
 .flex {
     display: flex;
@@ -54,21 +74,30 @@ html, body, footer {
     justify-content: center;
     max-width: 100%;
     text-align: center;
-
 }
 
-.flex img {
-    width: 100%;
-    height: auto;
-}
-.h1, .h2 {
-    text-align: center;
-}
-
-.Col img {
+.flex .col img  {
     width: 100%;
     height: auto;
     transition: transform .5s ease;
+}
+
+ .flex .col {
+    padding-bottom: 5px;
+    color: #424346;
+    background: #FFF;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: 1em 1em;
+}
+
+/* flex */
+
+.h1,.h2 {
+    text-align: center;
+    margin: auto;
 }
 
 .foto-sm {
@@ -77,10 +106,118 @@ html, body, footer {
 }
 
 .foto-sm img {
-    background-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+
+.info {
+    list-style-type: none;
 }
 
 .kontaktu {
-   
+    text-align: center;
 }
 
+.video {
+  text-align: center;
+}
+
+.VideoCol {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 100%;
+    text-align: center;
+}
+
+/*contact-form*/
+
+section.contact-form {
+    max-width: 500px;
+    margin: 10px auto;
+}
+
+.feedback-input {
+    color: #545353;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    line-height: 1.625em;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 2px solid #B6B3B3;
+    transition: all 0.3s;
+    padding: 10px;
+    margin-bottom: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+.feedback-input:focus {
+    border: 2px solid black;
+}
+
+textarea {
+    height: 100px;
+    line-height: 1.625em;
+    resize: vertical;
+}
+
+#contact-submit {
+    font-family: "Rubik", sans-serif;
+    width: 100%;
+    background: grey;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.3s;
+    margin-top: -4px;
+    font-weight: 300;
+}
+
+#feedback-input:last-child {
+    margin-bottom: 0;
+}
+
+[type="submit"]:hover {
+    background: red;
+}
+
+.contact-form p {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-weight: 100;
+    opacity: 0.8;
+}
+
+/*contact-form*/
+
+   @media (min-width: 200px) {
+    .first-flex, .two-flex  {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 3px;
+    }
+}
+
+    @media (min-width: 460px) {
+    .first-flex, .two-flex {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+    @media (min-width: 660px) {
+    .first-flex, .two-flex {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
