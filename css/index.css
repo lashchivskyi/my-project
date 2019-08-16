@@ -35,7 +35,6 @@ html {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
-    text-decoration: none;
     text-transform: uppercase;
     padding: 0;
     font-size: 15px;
@@ -45,12 +44,15 @@ html {
 .main-nav-list a {
     border: 2px solid transparent;
     padding: 5px;
+    text-decoration: none;
+    color: black;
 }
 
 header .main-nav-list a:hover {
-    border: 2px solid #fff;
-    background: #fff;
-    color: #4d4d4d;
+    border: 2px solid silver;
+    background: silver;
+    color: white;
+    text-decoration: none;
 }
 
 .phone {
@@ -86,14 +88,13 @@ header .main-nav-list a:hover {
 .flex .col {
     padding-bottom: 5px;
     color: #424346;
-    background: #FFF;
+    background: silver;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     overflow: hidden;
     display: flex;
     flex-direction: column;
     margin: 1em 1em;
 }
-
 
 /* flex */
 
@@ -143,6 +144,11 @@ header .main-nav-list a:hover {
     justify-content: center;
     max-width: 100%;
     text-align: center;
+}
+
+ul.item {
+    list-style-type: none;
+    display: flex;
 }
 
 
@@ -240,19 +246,24 @@ textarea {
     }
 }
 
-     .btn primary {
-        display: inline-block;
-        color: white;
-        text-decoration: none;
-        padding: .5em 2em;
-        outline: none;
-        border-width: 2px 0;
-        border-style: solid none;
-        border-color: #FDBE33 #000 #D77206;
-        border-radius: 6px;
-        background: linear-gradient(#F3AE0F, #E38916) #E38916;
-        transition: 0.2s;
-        } 
-        a.btn primary:hover { background: linear-gradient(#f5ae00, #f59500) #f5ae00; }
-        a.btn primary:active { background: linear-gradient(#f59500, #f5ae00) #f59500; }
-        
+.btn primary {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: .5em 2em;
+    outline: none;
+    border-width: 2px 0;
+    border-style: solid none;
+    border-color: #FDBE33 #000 #D77206;
+    border-radius: 6px;
+    background: linear-gradient(#F3AE0F, #E38916) #E38916;
+    transition: 0.2s;
+}
+
+a.btn primary:hover {
+    background: linear-gradient(#f5ae00, #f59500) #f5ae00;
+}
+
+a.btn primary:active {
+    background: linear-gradient(#f59500, #f5ae00) #f59500;
+}

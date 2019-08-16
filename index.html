@@ -13,6 +13,7 @@
 <body>
     <header class="main-header">
         <div class="phone">
+            <span class="clock"></span><span class="todayData"></span>
             <p class="name-firma">ТзОВ Львів-Тур</p>
             <a href="tel:0967600555"> тел:0967600555</a>
         </div>
@@ -47,7 +48,6 @@
                         Тематична екскурсія підземним Львовом, тривалістю приблизно 2,5 години. Підземне місто манить до
                         себе… Які таємниці воно від нас приховує?
                     </p>
-                    <button class="btn primary">Детальніше про екскурсію</button>
                 </div>
                 <div class="col" id="evening_lviv">
                     <img src="img/evening-lviv.jpg" alt="evening-lviv">
@@ -136,8 +136,8 @@
     <footer>
         <div id="contact">
             <p id="Замовити_екскурсію"></p>
-            <h2 class="h2">Замовити екскурсію</h2>
             <section class="contact-form" id="myForm">
+                <h2 class="h2">Замовити екскурсію</h2>
                 <form class="feedback-form" method="POST" name="contact">
                     <input class="feedback-input" id="userName" type="text" name="name" placeholder="Name" required>
                     <input class="feedback-input" id="userEmail" type="email" name="e-mail" placeholder="E-mail"
@@ -160,15 +160,19 @@
                     </div>
                     <p><strong>Зв'яжіться з нами в соціальних мережах</strong></p>
                     <div class="foto-sm">
+                        <ul class="item">
                         <li class="item active"> <a href="https://www.facebook.com"><img src="img/fb-icon.png"
                                     alt="Photo za Facebook"></a></li>
                         <li class="item active"><a href="https://www.google.com/intl/ru/gmail/about/"><img
                                     src="img/gmail-icon.png" alt="Photo za Gmail"></a></li>
+                        </ul>
                     </div>
                 </div>
             </section>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
 </body>
 

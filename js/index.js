@@ -1,5 +1,9 @@
-document.querySelector('.form input[type=submit]')
-    .addEventListener('click', login);
+/***** clock */
+setInterval( ()=> $('.clock').html((new Date()).toLocaleTimeString()), 1000 );
+
+/*** form */
+
+document.querySelector('#contact-submit').addEventListener('click',login);
 
 function login(e) {
     e.preventDefault();
@@ -10,11 +14,10 @@ function login(e) {
             // 'Content-Type': 'application/x-www-form-urlencoded',
         },
         body: JSON.stringify({
-            name: document.querySelector('.username').value,
-            email: document.querySelector('.email').value,
-            telefon: document.querySelector('.tel').value,
-            text: document.querySelector('.text').value
+            name: document.querySelector('#userName').value,
+            email: document.querySelector('#userEmail').value,
+            phone: document.querySelector('#textarea').value
         })
     })
-        .then(_ => document.querySelector('.form').reset());
+        .then(_ => document.querySelector('.feedback-form').reset());
 }
